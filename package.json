@@ -1,0 +1,16 @@
+{
+  "name": "aircon",
+  "version": "0.0.2",
+  "description": "Samsung aircon dms2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "request": "~2.27.0",
+    "xmlbuilder": "~0.4.2",
+    "xml2json": "~0.3.2"
+  }
+}
