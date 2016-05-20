@@ -29,7 +29,9 @@ module.exports = (ip,session) ->
 					a.ele('address',x)
 	worker = (commands,next) ->	
 		xml = builder.create('root')
-		xml.ele('header',{sa:'web',da:'dms',messageType:'request',dvmControlMode:'individual'})		
+		xml.ele('header',{sa:'web',da:'dms',messageType:'request'
+			,dateTime:(new Date()).toISOString().replace(/[A-Za-z]$/g, '')
+			,dvmControlMode:'individual'})		
 
 		for k,v of commands
 			if ops[k]?
